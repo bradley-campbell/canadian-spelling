@@ -108,8 +108,16 @@ const handleTextReplace = () => {
   const replaceText = (text) => {
     let newText = text;
     spellings.forEach((word) => {
-      const regex = new RegExp(word.american, "gi");
-      newText = newText.replace(regex, word.canadian);
+      const americanUpper =
+        word.american.charAt(0).toUpperCase() + word.american.slice(1);
+      const canadianUpper =
+        word.canadian.charAt(0).toUpperCase() + word.canadian.slice(1);
+
+      newText = newText.replace(americanUpper, canadianUpper);
+
+      // const regex = new RegExp(word.american, "gi");
+      
+      newText = newText.replace(word.american, word.canadian);
     });
 
     return newText;
