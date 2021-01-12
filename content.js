@@ -5,13 +5,13 @@ const spellings = [
   { canadian: "analyse", american: "analyze" },
   { canadian: "anaesthesia", american: "anesthesia" },
   { canadian: "arbour", american: "arbor" },
-  { canadian: "axe", american: "ax" }, // Axe shows as axee
+  // { canadian: "axe", american: "ax" }, // Axe shows as axee
   { canadian: "barrelled", american: "barreled" },
   { canadian: "behaviour", american: "behavior" },
   { canadian: "belabour", american: "belabor" },
-  { canadian: "brunette", american: "brunet" }, // Brunette shows as brunettete
+  // { canadian: "brunette", american: "brunet" }, // Brunette shows as brunettete
   { canadian: "calibre", american: "caliber" },
-  { canadian: "catalogue", american: "catalog" }, // Catalogue shows as catalogueue
+  // { canadian: "catalogue", american: "catalog" }, // Catalogue shows as catalogueue
   { canadian: "cancelled", american: "canceled" },
   { canadian: "candour", american: "candor" },
   { canadian: "centre", american: "center" },
@@ -24,8 +24,8 @@ const spellings = [
   { canadian: "crueller", american: "cruelest" },
   { canadian: "crystallize", american: "crystalize" },
   { canadian: "defence", american: "defense" },
-  { canadian: "dialogue", american: "dialog" }, // dialog shows as dialogueue
-  { canadian: "aeon", american: "eon" }, // aeon shows as aaeon
+  // { canadian: "dialogue", american: "dialog" }, // dialog shows as dialogueue
+  // { canadian: "aeon", american: "eon" }, // aeon shows as aaeon
   { canadian: "favour", american: "favor" },
   { canadian: "favourite", american: "favorite" },
   { canadian: "fervour", american: "fervor" },
@@ -56,7 +56,7 @@ const spellings = [
   { canadian: "macabre", american: "macaber" },
   { canadian: "manoeuvre", american: "maneuver" },
   { canadian: "marvellous", american: "marvelous" },
-  { canadian: "matte", american: "matt" }, // matte shows as matte --- may cause issues because Matt is a common name
+  // { canadian: "matte", american: "matt" }, // matte shows as matte --- may cause issues because Matt is a common name
   { canadian: "medallist", american: "medalist" },
   { canadian: "meagre", american: "meager" },
   { canadian: "metre", american: "meter" },
@@ -72,7 +72,6 @@ const spellings = [
   { canadian: "panelling", american: "paneling" },
   { canadian: "panelled", american: "paneled" },
   { canadian: "parlour", american: "parlor" },
-  // { canadia"n: practice (n) practise(v)	practice (n/v" },
   { canadian: "pummelled", american: "pummeled" },
   { canadian: "pyjamas", american: "pajamas" },
   { canadian: "odour", american: "odor" },
@@ -86,7 +85,7 @@ const spellings = [
   { canadian: "sombre", american: "somber" },
   { canadian: "sulphate", american: "sulfate" },
   { canadian: "sulphur", american: "sulfur" },
-  { canadian: "tonne", american: "ton" }, // tonne shows as tonnene
+  // { canadian: "tonne", american: "ton" }, // tonne shows as tonnene
   { canadian: "totalled", american: "totaled" },
   { canadian: "tranquillize", american: "tranquilize" },
   { canadian: "tumour", american: "tumor" },
