@@ -35,9 +35,6 @@ const handleTextReplace = () => {
         word.canadian.charAt(0).toUpperCase() + word.canadian.slice(1);
 
       newText = newText.replace(americanUpper, canadianUpper);
-
-      // const regex = new RegExp(word.american, "gi");
-
       newText = newText.replace(word.american, word.canadian);
     });
 
