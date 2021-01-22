@@ -23,41 +23,46 @@ const spellings = [
   { canadian: "vigour", american: "vigor" },
 ];
 
-const elements = document.getElementsByTagName("*");
+const handleTextReplace = () => {
+  const elements = document.getElementsByTagName("*");
 
-const replaceText = (text) => {
-  let newText = text;
-  spellings.forEach((word) => {
-    const americanUpper =
-      word.american.charAt(0).toUpperCase() + word.american.slice(1);
-    const canadianUpper =
-      word.canadian.charAt(0).toUpperCase() + word.canadian.slice(1);
+  const replaceText = (text) => {
+    let newText = text;
+    spellings.forEach((word) => {
+      const americanUpper =
+        word.american.charAt(0).toUpperCase() + word.american.slice(1);
+      const canadianUpper =
+        word.canadian.charAt(0).toUpperCase() + word.canadian.slice(1);
 
-    newText = newText.replace(americanUpper, canadianUpper);
+      newText = newText.replace(americanUpper, canadianUpper);
 
-    // const regex = new RegExp(word.american, "gi");
+      // const regex = new RegExp(word.american, "gi");
 
-    newText = newText.replace(word.american, word.canadian);
-  });
+      newText = newText.replace(word.american, word.canadian);
+    });
 
-  return newText;
-};
+    return newText;
+  };
 
-for (let i = 0; i < elements.length; i++) {
-  let element = elements[i];
+  for (let i = 0; i < elements.length; i++) {
+    let element = elements[i];
 
-  for (let j = 0; j < element.childNodes.length; j++) {
-    let node = element.childNodes[j];
+    for (let j = 0; j < element.childNodes.length; j++) {
+      let node = element.childNodes[j];
 
-    if (node.nodeType === 3) {
-      let text = node.nodeValue;
+      if (node.nodeType === 3) {
+        let text = node.nodeValue;
 
-      let replacedText = replaceText(text);
+        let replacedText = replaceText(text);
 
-      if (replacedText !== text) {
-        element.replaceChild(document.createTextNode(replacedText), node);
+        if (replacedText !== text) {
+          element.replaceChild(document.createTextNode(replacedText), node);
+        }
       }
     }
   }
-}
+};
 
+window.location.href.includes("https://twitter")
+  ? console.log("Not available")
+  : handleTextReplace();
