@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Canadian Spelling",
-  "description": "Chrome extension that converts American English spelling to Canadian English",
+  "name": "Neighbour Behaviour",
+  "description": "This extension converts American spelled -or words into their -our Canadian Spelling",
   "version": "1.0",
   "browser_action": { "default_icon": "icon.png" },
   "content_scripts": [
